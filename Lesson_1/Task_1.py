@@ -15,3 +15,31 @@ elif a == 6 or a == 7:
 else:
     print('Введите правильное число')
 
+
+day = int(input('Введите день недели: '))
+if 0 < day < 8:
+    if day == 6 or day == 7:
+        print('Выходной')
+    else:
+        print('Выходной')
+else:
+    print('Введено некорректное значение')
+
+
+match day:
+    case 1:
+        print('Понедельник')
+    case 2:
+        print('Вторник')
+    case 3:
+        print('Среда')
+    case 4:
+        print('Четверг')
+    case 5:
+        print('Пятница')
+    case 6:
+        print('Суббота')
+    case 7:
+        print('Воскресенье')
+    case _:
+        print('Введено некорректное значение')

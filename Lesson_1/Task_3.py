@@ -9,16 +9,16 @@
 # x=-34; y=-30 -> 3
 
 
-x = int(input('Введите координату X: '))
-y = int(input('Введите координату Y: '))
-if x ==0 or y == 0:
+x = float(input('Введите координату X: '))
+y = float(input('Введите координату Y: '))
+if x == 0 or y == 0:
     print('Координаты не должны быть равны нулю')
-if x > 0 and y > 0:
+elif x > 0 and y > 0:
     print('Первая четверть')
-if x < 0 and y > 0:
+elif x < 0 and y > 0:
     print('Вторая четверть')
-if x < 0 and y < 0:
+elif x < 0 and y < 0:
     print('Третья четверть')
-if x > 0 and y < 0:
+else:
     print('Четвертая четверть')
     
