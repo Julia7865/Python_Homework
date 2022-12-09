@@ -5,16 +5,27 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-number = abs(int(input('Введите число: ')))
-sum = 0
-while number != 0:
-    sum += number % 10
-    number //= 10 
-print(sum)
+from decimal import Decimal
 
+number = abs(Decimal(input('Введите число: ')))
+original = number
+
+def sum_digits(number: int):
+    summ = 0
+    while number != 0:
+        summ += number % 10
+        number //= 10 
+    return summ
+
+while(number != int(number)):
+    number *= 10
+
+summ = sum_digits(number)
+print(f'Сумма цифр в числе {original} равна {int(summ)}')
 
 # number = input('Введите число: ')
-# sum = 0
+# summ = 0
 # for i in number:
-#     sum += int(i)
-# print(sum)
+#   if i.isdigit():           # i != '.' and i != ',' and i != '-':    
+#       summ += int(i)
+# print(summ)

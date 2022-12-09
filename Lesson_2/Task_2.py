@@ -7,7 +7,7 @@ my_list = []
 for i in range(1, number + 1):
     my_list.append(round(((1 + 1/i)**i), 2))
 print(my_list)
-sum = 0
+summ = 0
 for i in range(len(my_list)):
-    sum += my_list[i]
-print(sum)
+    summ += my_list[i]
+print(summ)
